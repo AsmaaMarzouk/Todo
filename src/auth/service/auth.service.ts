@@ -8,6 +8,9 @@ export class AuthService {
   constructor(private readonly usersService: UsersService) { }
  
   
+
+
+
   async createToken(email: string) {
     const expiresIn = 60;
     const secretOrKey = fs.readFileSync("src/auth/constants/key.pem");;

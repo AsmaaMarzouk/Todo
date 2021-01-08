@@ -14,6 +14,8 @@ export class AuthController {
     async registerUser(@Response() res: any, @Body() body: UserCreate):Promise<void> {
     try{
       await this.userService.create(body);
+
+      
       console.log(body);
  }
     catch(error) {

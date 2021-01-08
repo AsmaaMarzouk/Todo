@@ -46,7 +46,7 @@ export class TodoController {
 
         }
       catch(error) {
-        console.log('That did not go well.')
+        console.log('That did not go Goood.')
         throw error
       }
     }
